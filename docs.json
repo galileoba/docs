@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "wGoldBank",
+        "tab": "Resources",
         "groups": [
           {
             "group": "Get Started",
@@ -22,7 +22,7 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "wGoldSpawn",
             "pages": [
               "essentials/markdown",
               "essentials/code",
