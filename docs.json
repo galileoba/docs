@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Waeship Dev",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#164aa3",
+    "light": "#0751c9",
+    "dark": "#153c80"
   },
   "favicon": "/favicon.png",
   "navigation": {
@@ -73,14 +73,9 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://discord.gg/sW8uj4vzcS"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "footer": {
     "socials": {
