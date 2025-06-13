@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Waeship Dev",
   "colors": {
-    "primary": "#164aa3",
+    "primary": "#2759b0",
     "light": "#123be0",
-    "dark": "#153c80"
+    "dark": "#2151a6"
   },
   "favicon": "/favicon.webp",
   "navigation": {
