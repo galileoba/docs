@@ -20,9 +20,9 @@
             ]
           },
           {
-            "group": "wGoldSpawn",
+            "group": "wGoldBank",
             "pages": [
-              "wGoldSpawn/CommandsPermissions"
+              "wGoldBank/CommandsPermissions"
             ]
           }
         ]
