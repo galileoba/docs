@@ -66,8 +66,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png"
+    "light": "/logo/dark1.png",
+    "dark": "/logo/dark1.png"
   },
   "navbar": {
     "links": [
