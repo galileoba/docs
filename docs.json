@@ -24,7 +24,8 @@
             "pages": [
               "wGoldBank/Features",
               "wGoldBank/Installation",
-              "wGoldBank/CommandsPermissions"
+              "wGoldBank/CommandsPermissions",
+              "wGoldBank/Placeholders"
             ]
           }
         ]
