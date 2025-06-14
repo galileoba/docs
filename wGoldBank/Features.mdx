@@ -2,3 +2,46 @@
 title: "Features"
 sidebarTitle: "Features"
 ---
+
+wGoldBank is more than just a simple banking plugin; it's a comprehensive economic engine designed to create a dynamic, player-driven market on your server. Built with performance and deep customization in mind, it provides a robust foundation for any economy-focused gameplay.
+
+![Goldbank2 Pn](/images/goldbank2.png)
+
+wGoldBank offers a secure and intuitive banking system for your players, all managed through a sleek, modern graphical user interface (GUI).
+
+- **Intuitive GUIs:** Forget confusing commands. Players can manage their accounts and view market data through a beautiful and easy-to-navigate menu system.
+- **Complete Customization:** Every single GUI is fully configurable via an easy-to-use config file. Change item appearances, layouts, slots, and actions to perfectly match your server's theme.
+- **Support for Custom Items:** Seamlessly integrate items from **Oraxen**, **ItemsAdder**, or use **Custom Model Data** and **custom player heads** (from Base64 textures or player names) in your menus.
+- **Flexible Transactions:** Players can deposit, withdraw, or sell pre-set amounts with a single click, or use the "Custom Amount" feature to input any value they desire.
+- **Secure Player-to-Player Transfers:** A safe and reliable transfer command allows players to send reserve items to each other, with configurable transaction fees.
+
+#### **The True Delta Dynamic Economy**
+
+This is the feature that sets wGoldBank apart. Instead of a static, boring economy, the price of the reserve item fluctuates based on real server activity, creating an immersive, stock-market-like experience.
+
+- **Player-Driven Price Changes:** The item's value is not random. It's calculated based on tangible economic factors, including:
+  - **Wealth Imbalance:** The ratio of total banked items versus the total server cash supply. If cash is abundant, the item price rises. If the bank is flooded with items, the price falls.
+  - **Sales Velocity:** The system constantly compares current sales volume to historical averages, reacting to high-demand (scarcity) and high-supply (saturation) periods.
+- **Advanced Configuration:** As an administrator, you have fine-grained control over the economy. Adjust the weight of each economic factor, set a price change "clamp" to prevent volatility, or set hard price caps to define a stable trading range.
+- **Asynchronous & Performant:** The entire price calculation process runs on a separate thread, guaranteeing **zero lag** or TPS drops on your main server thread, even while processing data from all players.
+
+#### **Detailed Market Statistics & Placeholders**
+
+Knowledge is power. wGoldBank provides players and server owners with all the data they need to make smart economic decisions.
+
+- **In-Depth Stats GUI:** A dedicated /gb price menu shows players everything they need to know:
+  - Current Price
+  - Daily High & Low
+  - **All-Time High (ATH)** and **All-Time Low (ATL)** with dates
+  - Daily, Yesterday's, and 30-Day Average Sales Volume
+- **Full PlaceholderAPI Support:** Integrate any wGoldBank stat into scoreboards, holograms, or other plugins. You can display everything from a player's rank to the market's all-time high price.
+- **Leaderboards:** The classic /gb baltop command allows players to see who holds the most wealth, encouraging competition and engagement.
+
+#### **Administrator Control**
+
+Manage your server's economy with ease using a full suite of administrative commands and tools.
+
+- **Granular Permissions:** Every single command, for both players and admins, has its own unique permission node for ultimate control.
+- **Remote Management:** Use commands like /gb depositfor, /gb withdrawfor, and /gb set to manage player balances directly from the console or as an admin in-game.
+- **On-Demand Price Updates:** Manually trigger a price calculation with /gb updateprice to see its effects or to refresh the market after a major server event.
+- **Clean Configuration:** All settings are logically separated into config.yml, lang.yml, and menus.yml, making customization straightforward and organized.
