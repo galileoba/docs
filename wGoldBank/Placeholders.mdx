@@ -1,4 +1,56 @@
 ---
-title: "Placeholders"
-sidebarTitle: "Placeholders"
+title: "PlaceholderAPI Guide"
+sidebarTitle: "PlaceholderAPI Guide"
+description: "wGoldBank fully supports PlaceholderAPI, allowing you to display dynamic economic data across your server in plugins like scoreboards, holograms, and more."
 ---
+
+### **Player-Specific Placeholders**
+
+| **Placeholder**              | **Description**                                                                | **Example Output** |
+| ---------------------------- | ------------------------------------------------------------------------------ | ------------------ |
+| %goldbank_balance%           | Displays the player's raw bank balance.                                        | 15200              |
+| %goldbank_balance_formatted% | Displays the player's balance, formatted according to the style in config.yml. | 15,200 Gold        |
+| %goldbank_rank%              | Shows the player's rank on the gold leaderboard.                               | 5 or N/A           |
+
+### **Market & Global Placeholders**
+
+| **Placeholder**                 | **Description**                                                    | **Example Output**            |
+| :------------------------------ | :----------------------------------------------------------------- | :---------------------------- |
+| %goldbank_gold_price%           | The current raw selling price for one reserve item.                | 125.50                        |
+| %goldbank_gold_price_formatted% | The current price, formatted as defined in config.yml.             | \$125.50                      |
+| %goldbank_total_gold%           | The total amount of reserve items stored across all bank accounts. | 1500000                       |
+| %goldbank_total_gold_formatted% | The total amount of gold, formatted as defined in config.yml.      | 1,500,000 Gold in circulation |
+| %goldbank_sell_fee%             | The current sell fee percentage.                                   | 10.0%                         |
+| %goldbank_transfer_fee%         | The current transfer fee percentage.                               | 5.0%                          |
+
+### **Historical & Dynamic Data Placeholders**
+
+| **Placeholder**           | **Description**                                       | **Example Output**  |
+| :------------------------ | :---------------------------------------------------- | :------------------ |
+| %goldbank_ath_price%      | The raw All-Time High price ever reached.             | 201.75              |
+| %goldbank_ath_date%       | The date the All-Time High price was reached.         | 2025-06-15 18:30:05 |
+| %goldbank_atl_price%      | The raw All-Time Low price ever reached.              | 59.20               |
+| %goldbank_atl_date%       | The date the All-Time Low price was reached.          | 2025-06-14 10:15:20 |
+| %goldbank_daily_high%     | The highest price reached today.                      | 130.10              |
+| %goldbank_daily_low%      | The lowest price reached today.                       | 122.45              |
+| %goldbank_7_day_avg%      | The average price over the last 7 days.               | 127.80              |
+| %goldbank_daily_sold%     | The total number of items sold to the bank today.     | 1250                |
+| %goldbank_yesterday_sold% | The total number of items sold to the bank yesterday. | 980                 |
+| %goldbank_avg_daily_sold% | The 30-day average of items sold per day.             | 1150                |
+
+### **Leaderboard (Baltop) Placeholders**
+
+These placeholders allow you to create custom leaderboards. Replace _X with a number (e.g., _1 for 1st place, \_2 for 2nd).
+
+| **Placeholder**                   | **Description**                                                                             | **Example Output**     |
+| :-------------------------------- | :------------------------------------------------------------------------------------------ | :--------------------- |
+| %goldbank_top_name_X%             | The name of the player at rank X.                                                           | gaalileo               |
+| %goldbank_top_balance_X%          | The raw balance of the player at rank X.                                                    | 500000                 |
+| %goldbank_top_balanceformatted_X% | The formatted balance of the player at rank X.                                              | 500,000                |
+| %goldbank_top_entry_X%            | The fully formatted line for the player at rank X, as defined by top-balance in config.yml. | Gaalileo: 500,000 Gold |
+
+### **Dynamic Calculation Placeholders**
+
+| **Placeholder**                    | **Description**                                                                                                          | **Usage Examples**                                                                             |
+| :--------------------------------- | :----------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| %goldbank_sell_price_final_AMOUNT% | Calculates the final cash amount a player would receive after fees for selling AMOUNT items. Supports numbers and "all". | %goldbank_sell_price_final_8%, %goldbank_sell_price_final_64%, %goldbank_sell_price_final_all% |
