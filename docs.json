@@ -57,6 +57,11 @@
           "anchor": "Discord",
           "href": "https://discord.gg/sW8uj4vzcS",
           "icon": "discord"
+        },
+        {
+          "anchor": "Warship",
+          "href": "https://warship.gg",
+          "icon": "ship"
         }
       ]
     }
